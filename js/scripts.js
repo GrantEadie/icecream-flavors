@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   $("#formOne").submit(function(event) {
     array0.forEach(function(element) {
+
       userInput = $("input#" + element).val();
       $("." + element).text(userInput);
     });
@@ -14,3 +15,12 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
+
+
+// this also functions -- keep in mind that forEach is the same as the num++ idea
+
+      //let array1 = [];
+      //let i = 0;
+      //array1.push($("input#" + element).val());
+      //$("." + element).text(array1[i]);
+      //i++
