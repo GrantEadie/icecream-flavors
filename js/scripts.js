@@ -13,7 +13,6 @@ $(document).ready(function() {
     let num = 0;
 
     array0.forEach(function(element) {
-      alert(array1[num]);
       $("." + element).text(array1[num]);
       num++;
     });
